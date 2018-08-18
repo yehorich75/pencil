@@ -1,0 +1,49 @@
+section.product
+    background: $color--light-grey
+
+.product__items
+    display: flex
+    flex-wrap: wrap
+    .product__item
+        width: calc(33% - 20px)
+        position: relative
+        background: #ffffff
+        margin: 0 10px 30px
+        box-shadow: -3px 4px 5px 0px #e1e1e1
+        transition: all .2s ease-in-out
+        &:hover
+            transform: scale(1.1)
+        &--link
+            text-decoration: none
+            position: relative
+        &--img
+            min-width: 100%
+            min-height: 100%
+        h4.product__item--title
+            font-weight: 600
+            letter-spacing: 4px
+            color: $blue-color
+            height: 60px
+            padding: 0
+            margin: 0
+            background: $color--white
+            display: flex
+            align-items: center
+            justify-content: center
+        &--catalog
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            font-size: .8rem
+            text-transform: uppercase
+            padding: 6px 0 4px
+            a
+                text-decoration: none
+                padding-bottom: 5px
+
+
+
+
+
+

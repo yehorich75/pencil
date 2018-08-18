@@ -1,0 +1,16 @@
+mixin product-card(title, link, item_img, img_1, img_2, text, catalog_1, catalog_2, catalog_1_name, catalog_2_name)
+    .product__item
+        h4.product__item--title= title
+        .product__item--main
+            a.product__item--link(href= link)
+                img.product__item--img(src= item_img)
+            .product__item--catalog
+                a(href= catalog_1)= catalog_1_name
+                    i.far.fa-file-pdf
+                a(href= catalog_2)= catalog_2_name
+                    i.far.fa-file-pdf
+
+mixin icon(name,mod)
+    - mod = mod || ''
+    svg(class="icon icon-" + name + ' ' + mod)
+        use(xlink:href="static/img/svg/symbol/sprite.svg#" + name)

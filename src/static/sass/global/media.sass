@@ -1,0 +1,169 @@
+@media (max-width: 360px)
+    .top
+        grid-template-columns: 100vw
+        .hero__title
+            width: 100vw
+            margin: 0
+            .nav
+                flex-direction: column
+            .logo,
+            .hero__captions,
+            .contacts,
+            .socials,
+            .mobile__menu
+                display: none
+
+        .fixed
+            height: 12vh
+            .nav
+                flex-direction: column
+                transition: 0.5s
+                transform: translateY(-100%)
+                position: fixed
+                a.nav__link
+                    width: 100%
+                    padding: 23px 0
+                    margin: 0
+            .nav__active
+                transform: translateY(0%)
+                flex-direction: column
+                width: 100vw
+                top: 7%
+
+
+            .mobile__menu
+                position: fixed
+                top: 0
+                outline: none
+                background: $color--white
+                display: block
+                border: none
+                height: 50px
+                width: 100%
+                z-index: 10
+                &--icon
+                    background-color: transparent
+                    border: $main-grey-border
+                    margin: 7px auto 0
+                    padding: 10px 20px
+                    width: 80px
+                    cursor: pointer
+                    text-transform: uppercase
+                    
+
+
+                // .divide
+                //     display: block
+                //     height: 2px
+                //     width: 30px
+                //     margin: 5px 0
+                //     background: $font-color
+                //     position: absolute
+                //     top: calc(50% - 1px)
+                //     left: calc(50% - 15px)
+                //     transition: 0.2s
+                // .divide:nth-child(1)
+                //     transform: translateY(-10px)
+                // .divide:nth-child(3)
+                //     transform: translateY(10px)
+                // &--active
+                //     .divide:nth-child(1)
+                //         transform: translateY(0px) rotate(-45deg)
+                //     .divide:nth-child(2)
+                //         transform: translateX(-30px)
+                //         opacity: 0
+                //     .divide:nth-child(3)
+                //         transform: translateY(0px) rotate(45deg)
+
+
+        .hero__captions,
+        .contacts,
+        .socials
+            display: none
+
+
+    .product__items
+        .product__item
+            flex-direction: column
+            padding: 20px 0
+            h4.product__item--title
+                margin: 0 auto
+                padding: 0 15px 15px
+                transform: none
+                writing-mode: horizontal-tb
+                position: inherit
+                right: 0
+            .product__item--info
+                width: 100%
+                text-align: center
+                .product__item--info-img
+                    img
+                        width: 50%
+                        height: auto
+                        padding: 10px 5px
+                &-text
+                    padding: 0 30px
+                    text-align: left
+
+    section
+        padding: 25px 0
+        h2
+            margin: 0 0 25px
+
+    section.video
+        .video__present
+            width: auto
+
+    .certificate
+        .certificate__items
+            .certificate__item
+                width: 100%
+                height: auto
+
+    footer.footer
+        padding: 50px 0 35px
+        .footer__contacts
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            padding: 0 20px
+            text-align: center
+
+@media (max-width: 720px)
+    .top
+        grid-template-columns: 100vw
+        .hero__title
+            width: 100vw
+            left: 0
+            .contacts__address
+                span
+                    padding: 0 5px
+        .hero__captions
+            display: none
+
+    .product
+        .product__items
+            .product__item
+                padding: 20px 0
+                width: 100%
+                h4.product__item--title
+                    margin: 0 auto
+                    padding: 0 15px 15px
+                    transform: none
+                    writing-mode: horizontal-tb
+                    position: inherit
+                    right: 0
+                    .product__item--info-img
+                        img
+                            width: 100%
+                            height: 100%
+                            padding: 10px 5px
+                    &-text
+                        padding: 0 30px
+                        text-align: left
+
+    .certificate__items
+        .certificate__item
+            width: 100%
+

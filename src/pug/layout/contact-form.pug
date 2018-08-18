@@ -1,0 +1,14 @@
+div.contact-form
+    .container
+        form.contact-form__items#conactForm(action="contact_form.php" method="post")
+            .contact-form__item
+                .input-group
+                    input.form.form-control(type="text" placeholder="Имя" name="name")
+                .input-group
+                    input.form.form-control(type="email" placeholder="Эл.адрес" name="email")
+                .input-group
+                    input.form.form-control(type="tel" placeholder="Телефон" name="number")
+            .contact-form__item
+                .input-group
+                    textarea.form.form-control(name="message", placeholder="Сообщение", rows="9")
+                    button#cfsubmit.text-center.form-btn.form-btn(type="submit") Отправить

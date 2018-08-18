@@ -1,0 +1,29 @@
+html
+    box-sizing: border-box
+    touch-action: manipulation
+
+body
+    font-family: $ff-main
+    font-size: 1rem
+    color: $font-color
+    line-height: 1.2
+    margin: 0
+    padding: 0
+
+*, *:before, *:after
+    box-sizing: inherit
+
+ul, ol 
+    list-style: none
+
+.clearfix
+    &:after
+        content: ''
+        display: table
+        clear: both
+
+h1
+    font-family: $ff-main-bold
+
+img
+    max-width: 100%

@@ -1,0 +1,30 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content="IE=edge")
+        meta(name='viewport' content='width=device-width')
+        //- link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" crossorigin="anonymous")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo|Montserrat:300,400,500,700,800&amp;subset=cyrillic-ext")
+        link(rel="stylesheet" href="css/main.min.css")
+        title Asfour Crystal Україна
+    body
+        .wrapper
+            include layout/header.pug
+            include layout/product.pug
+            include layout/video.pug
+            include layout/certificate.pug
+        include layout/map.pug
+        include layout/footer.pug
+        //- include sections/hero.pug
+        //- include sections/about.pug
+        //- include sections/form.pug
+
+        script(type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js")
+        script(type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+        //- script(type="text/javascript" src="scripts/slick.min.js")
+        //- script(src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js")
+        //- script(type="text/javascript" src="scripts/anime.min.js")
+        script(type="text/javascript" src="scripts/main.min.js")
+
