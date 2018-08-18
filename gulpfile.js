@@ -104,9 +104,9 @@ gulp.task('img:build', function() {
 gulp.task('scripts:lib', function() {
     return gulp.src([
             // Библиотеки
-            'node_modules/jquery/dist/jquery.min.js',
-            'node_modules/slick-carousel/slick/slick.min.js',
-            'src/static/js/smooth-scroll.polyfills.min.js',
+            // 'node_modules/jquery/dist/jquery.min.js',
+            // 'node_modules/slick-carousel/slick/slick.min.js',
+            // 'src/static/js/smooth-scroll.polyfills.min.js',
             // 'build/static/libs/magnific/jquery.magnific-popup.min.js',
             // 'build/static/libs/bxslider/jquery.bxslider.min.js',
             // 'build/static/libs/maskedinput/maskedinput.js',
