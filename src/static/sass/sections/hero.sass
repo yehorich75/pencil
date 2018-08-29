@@ -1,9 +1,38 @@
 .hero
     display: grid
     grid-template-columns: repeat(12, 1fr)
+    background: linear-gradient(to right, #98a4b4, #bfc8d1)
+    height: 100vh
+    padding: 40px
+    position: relative
+    .content__img
+        position: absolute
+        top: 20%
+        left: 5%
+        img.image-origin
+            width: 24vw
+            position: relative
+        img.image-shadow
+            width: 10vw
+            // background: linear-gradient(to right, #7f00ff, #e100ff)
+            filter: drop-shadow(3px 5px 4px #000) blur(9px) contrast(0%) brightness(73%)
+            transform: rotate(165deg) skew(75deg)
+            transform-origin: bottom left
+    .nav
+        display: flex
+        position: absolute
+        top: 10%
+        left: 10%
+        grid-column: 2, span 5
+        &__items
+            display: block
+        &__item,
+        .logo
+            color: $color--white
+            font-weight: 600
+            letter-spacing: 1px
     .sidebar
-        grid-column: span 2
-        background-color: #ffb7b1
+        grid-column: 1/ span 2
+        background: linear-gradient(to top, #ff8c95, #ffcdc2)
     .content
-        grid-column: 2/ span 12
-        background-color: #b2bbc5
+        grid-column: 3/ span 12
